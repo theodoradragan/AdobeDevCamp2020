@@ -65,4 +65,12 @@ public final class Company {
                 ", numberOfEmployees=" + numberOfEmployees +
                 '}';
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public long getNumberOfEmployees() {
+        return numberOfEmployees;
+    }
 }
