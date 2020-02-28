@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -35,7 +36,7 @@ import static java.util.Objects.nonNull;
 public class Main {
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
-    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(Main.class);
+    private static final Logger logger = LoggerFactory.getLogger(Main.class);
 
     public static void main(String[] args) {
         objectMapper.setVisibility(FIELD, JsonAutoDetect.Visibility.ANY);
