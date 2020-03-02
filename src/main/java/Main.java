@@ -53,7 +53,7 @@ public class Main {
             logger.error("Errors while trying to serialize/deserialize Company objects");
         }
 
-        final String databaseURL = "jdbc:mysql://localhost:3306/test_db";
+        final String databaseURL = "jdbc:mysql://localhost:3307/test_db";
         final String user = "root";
         final String password = "";
 
